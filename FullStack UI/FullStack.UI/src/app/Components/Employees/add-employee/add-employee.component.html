@@ -1,0 +1,30 @@
+<div class="container my-5">
+          <section class="get-in-touch">
+            <h1 class="title">Add a new Employee</h1>
+            <form class="contact-form row" (ngSubmit)="addEmployeeMethod()">
+               <div class="form-field col-lg-6">
+                  <input id="name" class="input-text js-input" type="text" name="Name" [(ngModel)]="addEmployeeRequest.Name" required>
+                  <label class="label" for="name">Name</label>
+               </div>
+               <div class="form-field col-lg-6 ">
+                  <input id="email" class="input-text js-input" type="email" name="Email" [(ngModel)]="addEmployeeRequest.Email" required>
+                  <label class="label" for="email">E-mail</label>
+               </div>
+                <div class="form-field col-lg-6 ">
+                  <input id="number" class="input-text js-input" type="text" name="Contact" [(ngModel)]="addEmployeeRequest.Contact" required>
+                  <label class="label" for="phone">Contact Number</label>
+               </div>
+               <div class="form-field col-lg-6 ">
+                  <input id="company" class="input-text js-input" type="number" name="Salary" [(ngModel)]="addEmployeeRequest.Salary" required>
+                  <label class="label" for="company">Salary</label>
+               </div>
+               <div class="form-field col-lg-12 ">
+                  <input id="email" class="input-text js-input" type="text" name="Department" [(ngModel)]="addEmployeeRequest.Department" required>
+                  <label class="label" for="email">Department</label>
+               </div>
+               <div class="form-field col-lg-12">
+                  <input class="submit-btn" type="submit" value="Submit">
+               </div>
+            </form>
+         </section>
+        </div>
